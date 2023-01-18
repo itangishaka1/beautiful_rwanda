@@ -43,11 +43,17 @@
       color: #fff;
       text-transform: uppercase;
 
+      backface-visibility: hidden; // in case our animation shake(last letter) 
+
       .heading-primary-main {
         display: block;
         font-size: 60px;
         font-weight: 400;
         letter-spacing: 12px;
+
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
       }
       .heading-primary-sub {
         display: block;
@@ -55,7 +61,40 @@
         font-weight: 700;
         letter-spacing: 11px;
         padding-left: 10px;
+
+        animation: moveInRight 1s ease-out;
       }
     }
+  }
+}
+
+// Animation
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  80% {
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
