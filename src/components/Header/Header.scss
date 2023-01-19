@@ -38,13 +38,15 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center; // added to center the btn-white
 
     .heading-primary {
       color: #fff;
       text-transform: uppercase;
 
-      backface-visibility: hidden; // in case our animation shake(last letter) 
-
+      backface-visibility: hidden; // in case our animation shake(last letter)
+      margin-bottom: 60px;
+      
       .heading-primary-main {
         display: block;
         font-size: 60px;
@@ -84,6 +86,7 @@
     transform: translate(0);
   }
 }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;

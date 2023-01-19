@@ -1,5 +1,6 @@
 import "./Header.scss";
 import Logo from "../../img/logo-white.png";
+import Button from "../Button/Button";
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
           <span className="heading-primary-main">visit rwanda</span>
           <span className="heading-primary-sub">the country of 1000 hills</span>
         </h1>
+        <Button text='discover our tours' className='btn-white' />
       </div>
     </header>
   );
