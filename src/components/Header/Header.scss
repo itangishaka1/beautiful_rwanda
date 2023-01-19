@@ -25,11 +25,11 @@
 
   .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 
     .logo {
-      height: 35px;
+      height: 3.5rem;
     }
   }
 
@@ -45,13 +45,13 @@
       text-transform: uppercase;
 
       backface-visibility: hidden; // in case our animation shake(last letter)
-      margin-bottom: 60px;
+      margin-bottom: 6rem;
       
       .heading-primary-main {
         display: block;
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 12px;
+        letter-spacing: 1.2rem;
 
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -59,10 +59,10 @@
       }
       .heading-primary-sub {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 11px;
-        padding-left: 10px;
+        letter-spacing: 1.1rem;
+        padding-left: 1rem;
 
         animation: moveInRight 1s ease-out;
       }
@@ -75,11 +75,11 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-150px);
+    transform: translateX(-15rem);
   }
 
   80% {
-    transform: translateX(15px);
+    transform: translateX(1.5rem);
   }
   100% {
     opacity: 1;
@@ -90,11 +90,11 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(150px);
+    transform: translateX(15rem);
   }
 
   80% {
-    transform: translateX(-15px);
+    transform: translateX(-1.5rem);
   }
   100% {
     opacity: 1;
