@@ -3,7 +3,7 @@ import './Button.scss'
 
 const Button = ({ className, text }) => {
   return (
-    <a href='#top' className={`${className} btn btn-animated`}>{text}</a>
+    <a href='#top' className={`${className} btn btn--animated`}>{text}</a>
   )
 }
 
