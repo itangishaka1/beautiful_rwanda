@@ -25,11 +25,12 @@
         }
     }
 
-    &__subheading {
-        font-size: $default-font-size;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+    //moved to the utility classes
+    // &__subheading {
+    //     font-size: $default-font-size;
+    //     font-weight: 700;
+    //     text-transform: uppercase;
+    // }
 
     &__paragraph {
         font-size: $default-font-size;
