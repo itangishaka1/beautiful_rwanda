@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="about">
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="about__heading">
+        <h2 className="section-heading">
           Exciting tours for adventurous people
         </h2>
       </div>
