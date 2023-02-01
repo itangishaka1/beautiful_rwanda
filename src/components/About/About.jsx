@@ -3,6 +3,7 @@ import "../Grid-test/Grid_test.scss";
 import Photo1 from "../../img/nat-1-large.jpg";
 import Photo2 from "../../img/nat-2-large.jpg";
 import Photo3 from "../../img/nat-3-large.jpg";
+import ButtonText from "../Button/ButtonText/ButtonText";
 
 const About = () => {
   return (
@@ -31,9 +32,11 @@ const About = () => {
             maxime ex sunt laborum, est iure maiores quam nihil totam omnis
             delectus esse.
           </p>
-          <a href="#about" className="about__btn-text" id="about">
-            Learn more &rarr;
-          </a>
+          <ButtonText 
+             href="#about"
+             id="about"
+             text='Learn more &rarr;'
+          />
         </div>
         <div className="col-1-of-2">
           <div className="composition">

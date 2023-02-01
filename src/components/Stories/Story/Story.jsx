@@ -1,24 +1,15 @@
 import "./Story.scss";
 
-import People1 from '../../../img/nat-8.jpg'
-
-const Story = () => {
+const Story = ({ person, caption, heading, story }) => {
   return (
     <article className="story">
       <figure className="story__shape">
-        <img src={People1} alt="person on a tour" className="story__img" />
+        <img src={person} alt="person on a tour" className="story__img" />
+        <figcaption className="story__caption">{caption}</figcaption>
       </figure>
       <div className="story__text">
-        <h3 className="heading-tertiary u-margin-bottom-small">
-          I had the best week ever with my family
-        </h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
-          ducimus atque nulla vel sit tempore fugiat autem pariatur labore sunt.
-          Natus ducimus atque nulla vel sit tempore fugiat autem pariatur labore
-          Natus ducimus atque nulla vel sit tempore fugiat autem pariatur labore
-          sunt.
-        </p>
+        <h3 className="heading-tertiary u-margin-bottom-small">{heading}</h3>
+        <p>{story}</p>
       </div>
     </article>
   );

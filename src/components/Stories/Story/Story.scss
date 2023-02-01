@@ -1,4 +1,5 @@
 @use "../../../partials/variables" as *;
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -29,14 +30,46 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+
+    position: relative;
   }
 
   &__img {
-    width: 100%;
     height: 100%;
-  }
+    // width: 100%; // not okay really
+    transform: translateX(-4rem) scale(1.4); // to center the image or use also width together with height
+    // backface-visibility: hidden;  // in case the shape changes
+    transition: all .5s;
+
+}
 
   &__text {
     transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+
+    // to prevent the shaking of the text at the end
+    // backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%); // value under 100% makes it darker
   }
 }
