@@ -65,12 +65,8 @@ const Tours = () => {
         </div>
       </article>
       <div className="u-center-text u-margin-top-huge">
-      <Button 
-       text='discover all tours'
-       className='btn--green'
-       />
-       </div>
-       
+        <Button text="discover all tours" className="btn--green" />
+      </div>
     </section>
   );
 };
