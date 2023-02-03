@@ -3,10 +3,12 @@ import Story from "./Story/Story";
 import People1 from "../../img/nat-8.jpg";
 import People2 from "../../img/nat-9.jpg";
 import ButtonText from "../Button/ButtonText/ButtonText";
+import Video from "../Video/Video";
 
 const Stories = () => {
   return (
     <section className="stories">
+     <Video />
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="section-heading">we make people genuinely happy</h2>
       </div>
