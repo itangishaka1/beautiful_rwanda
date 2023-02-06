@@ -12,7 +12,7 @@ const Form = ()=> {
             </div>
             <div className="form__group">
                 <input type="email" className="form__input" placeholder='Email Address' id='email' required />
-                <label htmlFor="email" className="form__label">Email</label>
+                <label htmlFor="email" className="form__label">Email Address</label>
             </div>
         </form>
     )
