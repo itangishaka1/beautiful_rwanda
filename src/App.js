@@ -6,10 +6,12 @@ import Tours from './components/Tours/Tours'
 import Stories from "./components/Stories/Stories";
 import Booking from "./components/Booking/Booking";
 import Footer from "./components/Footer/Footer";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
     <>
+    <Navigation />
       <Header />
       {/* <GridTest /> */}
       <main>
