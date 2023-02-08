@@ -7,6 +7,7 @@ import Stories from "./components/Stories/Stories";
 import Booking from "./components/Booking/Booking";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
+import Popup from "./components/Popup/Popup";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Booking />
       </main>
       <Footer />
+      <Popup />
     </>
   );
 }
