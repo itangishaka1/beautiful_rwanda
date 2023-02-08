@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 
 const Tours = () => {
   return (
-    <section className="tours">
+    <section className="tours" id='section-tours'>
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="section-heading">most popular tours</h2>
       </div>

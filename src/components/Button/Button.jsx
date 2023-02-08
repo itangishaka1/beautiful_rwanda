@@ -1,9 +1,9 @@
 import './Button.scss'
 
 
-const Button = ({ className, text }) => {
+const Button = ({ className, text, id }) => {
   return (
-    <a href='#top' className={`${className} btn btn--animated`}>{text}</a>
+    <a href={`#${id}`} className={`${className} btn btn--animated`}>{text}</a>
   )
 }
 

@@ -5,13 +5,14 @@ import Button from "../Button/Button";
 
 const Popup = () => {
   return (
-    <article className="popup">
+    <article className="popup" id='popup'>
       <div className="popup__content">
         <div className="popup__left">
           <img src={Photo1} alt="Tour" className="popup__img" />
           <img src={Photo2} alt="Tour" className="popup__img" />
         </div>
         <div className="popup__right">
+            <a href="#section-tours" className="popup__close">&times;</a>
           <h2 className="section-heading u-margin-bottom-small">start booking now</h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
             Important &ndash; Please read these terms before booking

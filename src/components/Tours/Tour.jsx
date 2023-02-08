@@ -12,6 +12,7 @@ const Tour = ({
   item4,
   item5,
   price_value,
+  id
 }) => {
   return (
     <article className="card">
@@ -38,7 +39,7 @@ const Tour = ({
             <p className="card__price-only">Only</p>
             <p className="card__price-value">${price_value}</p>
           </div>
-          <Button className="btn--white" text="Book now!" />
+          <Button className="btn--white" text="Book now!" id='popup' />
         </div>
       </div>
     </article>
