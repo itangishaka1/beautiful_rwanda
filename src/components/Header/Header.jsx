@@ -11,8 +11,8 @@ const Header = () => {
 
       <div className="header__text-box">
         <h1 className="heading-primary">
-          <span className="heading-primary--main">visit rwanda</span>
-          <span className="heading-primary--sub">the country of 1000 hills</span>
+          <span className="heading-primary--main">outdoors</span>
+          <span className="heading-primary--sub">is where life happens</span>
         </h1>
         <Button text='discover our tours' className='btn--white' />
       </div>

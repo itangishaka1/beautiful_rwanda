@@ -9,6 +9,34 @@
 .u-margin-bottom-small { margin-bottom: 1.5rem;}
 .u-margin-bottom-medium { margin-bottom: 4rem;}
 
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden; // in case our animation shake(last letter)
+    margin-bottom: 6rem;
+
+    &--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 1.6rem;
+
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.1rem;
+      padding-left: 1rem;
+
+      animation: moveInRight 1s ease-out;
+    }
+  }
+
 .section-heading {
         font-size: 3.5rem;
         text-transform: uppercase;
