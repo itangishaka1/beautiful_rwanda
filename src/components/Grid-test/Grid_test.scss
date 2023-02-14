@@ -1,5 +1,5 @@
 @use "../../partials/variables" as *;
-@use "../../partials/mixins";
+@use "../../partials/mixins" as *;
 
 .row {
   max-width: $grid-width;
@@ -9,9 +9,18 @@
   // select everything but not the last child
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tablet_portrait){
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
-  @include mixins.clearfix;
+  @include respond(tablet_portrait){
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
+  @include clearfix;
 
   // select all class that starts with col-
   // ^ start with, * all that contain , $ end with
@@ -21,6 +30,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tablet_portrait){
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tablet_portrait){
+      width: 100% !important;
     }
   }
 
