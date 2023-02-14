@@ -23,7 +23,7 @@
       right: 4rem;
     }
 
-    @include respond(tablet_portrait){
+    @include respond(phone){
       top: 3rem;
       right: 3rem;
     }
