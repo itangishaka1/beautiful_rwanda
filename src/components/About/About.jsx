@@ -7,7 +7,7 @@ import ButtonText from "../Button/ButtonText/ButtonText";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id='about'>
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="section-heading">
           Exciting tours for adventurous people

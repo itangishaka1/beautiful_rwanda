@@ -3,7 +3,7 @@ import './Booking.scss'
 
 const Booking = () => {
   return (
-    <section className='booking'>
+    <section className='booking' id='booking'>
         <div className="row">
             <div className="book">
                 <div className="book__form">

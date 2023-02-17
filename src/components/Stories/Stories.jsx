@@ -7,7 +7,7 @@ import Video from "../Video/Video";
 
 const Stories = () => {
   return (
-    <section className="stories">
+    <section className="stories" id='stories'>
      <Video />
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="section-heading">we make people genuinely happy</h2>

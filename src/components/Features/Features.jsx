@@ -5,7 +5,7 @@ import Feature from './Feature/Feature'
 
 const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id='features'>
       <div className="row">
        <Feature  
             icon='icon-basic-world' 

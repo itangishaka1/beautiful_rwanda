@@ -1,11 +1,12 @@
 import "./Footer.scss";
 import Logo from "../../img/logo-green-2x.png";
+import LogoSmall from "../../img/logo-green-1x.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__logo-box u-margin-bottom-big">
-        <img src={Logo} alt="Full logo" className="footer__logo" />
+        <img srcSet={`${LogoSmall} 1x, ${Logo} 2x`} alt="Full logo" className="footer__logo" />
       </div>
       <div className="row">
         <div className="col-1-of-2">
