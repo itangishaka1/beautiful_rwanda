@@ -2,11 +2,26 @@ import "./Footer.scss";
 import Logo from "../../img/logo-green-2x.png";
 import LogoSmall from "../../img/logo-green-1x.png";
 
+import LogoS from "../../img/logo-green-small-2x.png";
+import LogoS2 from "../../img/logo-green-small-1x.png";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__logo-box u-margin-bottom-big">
-        <img srcSet={`${LogoSmall} 1x, ${Logo} 2x`} alt="Full logo" className="footer__logo" />
+        {/* 
+          https://www.npmjs.com/package/react-responsive-picture
+          or
+          https://crystallize.com/blog/react-srcset-for-responsive-images
+            Use this instead for responsive images
+         */}
+        <picture className="footer__logo">
+          <source
+            media="(max-width:37.5em)"
+            srcSet={`${LogoS2} 1x, ${LogoS} 2x`}
+          />
+          <img srcSet={`${LogoSmall} 1x, ${Logo} 2x`} alt="Full logo" />
+        </picture>
       </div>
       <div className="row">
         <div className="col-1-of-2">
@@ -49,8 +64,10 @@ const Footer = () => {
             for his practice{" "}
             <a href="#link" className="footer__link">
               Visit Rwanda
-            </a>.
-            <br/>Copyright &copy; by Abdullah Itangishaka. You are 100% to use this
+            </a>
+            .
+            <br />
+            Copyright &copy; by Abdullah Itangishaka. You are 100% to use this
             page for person and commercial use, but NOT to claim it as your own
             design. A credit to the original author, Abdullah Itangishaka, is of
             course highly appriciated!
