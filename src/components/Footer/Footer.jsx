@@ -20,7 +20,8 @@ const Footer = () => {
             media="(max-width:37.5em)"
             srcSet={`${LogoS2} 1x, ${LogoS} 2x`}
           />
-          <img srcSet={`${LogoSmall} 1x, ${Logo} 2x`} alt="Full logo" />
+          <img 
+               srcSet={`${LogoSmall} 1x, ${Logo} 2x`} alt="Full logo"  src={Logo}/>
         </picture>
       </div>
       <div className="row">
